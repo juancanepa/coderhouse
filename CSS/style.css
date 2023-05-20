@@ -1,0 +1,117 @@
+*{
+    font-family: sans-serif;
+    font-weight: 300;
+    
+} 
+
+h1{
+    color: black;
+    background-color: aquamarine;
+    font-size: 50px;
+} 
+
+section article h2 {
+
+    color:black;
+} 
+
+section article { 
+    background-color:cadetblue;
+    width: 500px;
+    height: 500px;
+}
+
+#id_galeria{
+    background-color: rgb(170, 142, 142);
+}
+
+#id_galeria img{
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+ul.barraNav{
+    list-style-type: none;
+    width: 50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
+}
+ul.barraNav li a{
+    text-decoration: none;
+    padding:1rem;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+ul.barraNav li a:hover{
+    
+    background-color: aqua;
+    
+}
+
+ul.barraNav li {
+    display:inline-block;
+}
+
+
+.article{
+    vertical-align: top;
+    display: inline-block;
+    width: 30%; 
+    margin-right: 20px; 
+}
+
+
+.title{
+    text-align: center;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+header{
+    display: flex; /*los elementos hijos de header son flexibles*/
+    justify-content: flex-end;
+    
+}
+
+.about_us{
+    display: flex; /*los elementos hijos de header son flexibles*/
+    flex-wrap:wrap; /*cuando un elemento no entre en una fila, que lo anada a continuacion*/
+    justify-content: center;
+}
+
+.about_us img{
+    width: 30%;
+    margin: 5px;
+    border: solid 2px black;
+    border-radius: 2rem;
+}
+
+.about_us img:hover{
+    opacity: 1;
+}
+
+
+.contenedor_logo{
+    display:flex;
+    justify-content: center;
+    align-items: center; /*para alinear el ícono en el centro del contenedor*/
+    width: 20%;
+}
+nav{
+    display:flex;
+    width: 80%;
+    justify-content: flex-end; /*para mandar a los hijos al final*/
+}
+
+.rights{
+    text-align: center;
+}
+
+.ListaObrasSociales li{
+    margin-bottom: 10px;
+}
