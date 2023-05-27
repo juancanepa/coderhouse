@@ -11,7 +11,7 @@
 .contenedor_padre{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 4% 92% 4%;
     grid-template-areas:    "header"
                             "main"
                             "footer";
@@ -95,6 +95,24 @@ ul.barraNav li {
 .title{
     text-align: center;
 }
+  /* Media query for viewport width less than or equal to 500px */
+@media (max-width: 1000px) {
+    .title {
+      /* Add your styles for smaller viewports here */
+      font-size: 24px; /* Adjust the font size as needed */
+      text-align: center; /* Center-align the title */
+    }
+}
+
+  /* Media query for viewport width greater than 500px */
+@media (min-width: 1001px) {
+    .title {
+      /* Add your styles for larger viewports here */
+      font-size: 32px; /* Adjust the font size as needed */
+      text-align: left; /* Reset the text alignment if necessary */
+    }
+}
+
 
 .logo{
     width: 80px;
@@ -107,22 +125,27 @@ header{
     
 }
 
-.about_us{
-    display: flex; /*los elementos hijos de header son flexibles*/
-    flex-wrap:wrap; /*cuando un elemento no entre en una fila, que lo anada a continuacion*/
-    justify-content: center;
-}
+.about_us img {
+    max-width: 100%;
+    height: auto;
+  }
 
-.about_us img{
-    width: 30%;
-    margin: 5px;
-    border: solid 2px black;
-    border-radius: 2rem;
-}
 
-.about_us img:hover{
-    opacity: 1;
-}
+@media (max-width: 500px) {
+    .about_us {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    
+    .about_us img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+
 
 
 .contenedor_logo{
