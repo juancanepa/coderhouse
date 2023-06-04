@@ -27,6 +27,7 @@ footer {
   grid-area: footer;
 }
 
+/*Nesting aplicado*/
 section article {
   background-color: cadetblue;
   width: 500px;
@@ -54,6 +55,7 @@ header {
   justify-content: flex-end;
 }
 
+/*Nesting aplicado*/
 .about_us img {
   max-width: 100%;
   height: auto;
@@ -74,6 +76,7 @@ ul.barraNav {
   align-items: center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
 }
 
+/*Nesting aplicado*/
 ul.barraNav li a {
   text-decoration: none;
   padding: 1rem;
@@ -81,10 +84,12 @@ ul.barraNav li a {
   border-radius: 50%;
 }
 
+/*Nesting aplicado*/
 ul.barraNav li a:hover {
   background-color: aqua;
 }
 
+/*Nesting aplicado*/
 ul.barraNav li {
   display: inline-block;
 }
@@ -99,6 +104,7 @@ nav {
   text-align: center;
 }
 
+/*Nesting aplicado*/
 .ListaObrasSociales li {
   margin-bottom: 10px;
 }
@@ -111,6 +117,7 @@ h1 {
   font-size: 50px;
 }
 
+/*Nesting aplicado*/
 section article h2 {
   color: black;
 }
@@ -124,6 +131,7 @@ ul.barraNav {
   align-items: center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
 }
 
+/*Nesting aplicado*/
 ul.barraNav li a {
   text-decoration: none;
   padding: 1rem;
@@ -131,6 +139,7 @@ ul.barraNav li a {
   border-radius: 50%;
 }
 
+/*Nesting aplicado*/
 ul.barraNav li a:hover {
   background-color: aqua;
 }
@@ -168,4 +177,14 @@ ul.barraNav li {
     height: auto;
     margin-bottom: 10px;
   }
+}
+/*Aqui pongo todo sobre la galeria*/
+#id_galeria {
+  background-color: rgb(170, 142, 142);
+}
+
+/*Nesting applied*/
+#id_galeria img {
+  border: 2px solid white;
+  border-radius: 30px;
 }/*# sourceMappingURL=style.css.map */

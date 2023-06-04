@@ -4,7 +4,13 @@
     background-color: rgb(170, 142, 142);
 }
 
-#id_galeria img{
-    border: 2px solid white;
-    border-radius: 30px;
+
+/*Nesting applied*/
+
+#id_galeria{
+    img{
+        border: 2px solid white;
+        border-radius: 30px;
+    }
+
 }

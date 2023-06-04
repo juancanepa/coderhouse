@@ -24,10 +24,14 @@ footer{
     grid-area: footer;
 }
 
-section article { 
-    background-color:cadetblue;
-    width: 500px;
-    height: 500px;
+/*Nesting aplicado*/
+section{ 
+    article{ 
+        background-color:cadetblue;
+        width: 500px;
+        height: 500px;
+    }
+
 }
 
 
@@ -54,11 +58,14 @@ header{
     
 }
 
-.about_us img {
-    max-width: 100%;
-    height: auto;
-}
+/*Nesting aplicado*/
+.about_us{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 
+}
 
 .contenedor_logo{
     display:flex;
@@ -73,21 +80,35 @@ ul.barraNav{
     justify-content: space-evenly;
     align-items:center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
 }
-ul.barraNav li a{
-    text-decoration: none;
-    padding:1rem;
-    background-color: aquamarine;
-    border-radius: 50%;
+
+/*Nesting aplicado*/
+ul.barraNav{
+    li{
+        a{
+            text-decoration: none;
+            padding:1rem;
+            background-color: aquamarine;
+            border-radius: 50%;
+        }
+    }
 }
 
-ul.barraNav li a:hover{
-    
-    background-color: aqua;
-    
+/*Nesting aplicado*/
+
+ul.barraNav{
+    li{
+        a:hover{
+            background-color: aqua;
+        }
+    }
+
 }
 
-ul.barraNav li {
-    display:inline-block;
+/*Nesting aplicado*/
+ul.barraNav{
+    li{
+        display:inline-block;
+    }
 }
 
 nav{
@@ -100,10 +121,14 @@ nav{
     text-align: center;
 }
 
-.ListaObrasSociales li{
-    margin-bottom: 10px;
-}
+/*Nesting aplicado*/
 
+.ListaObrasSociales{
+    li{
+        margin-bottom: 10px;
+    }
+
+}
 /**/
 
 

@@ -6,7 +6,13 @@ h1{
     font-size: 50px;
 } 
 
-section article h2 {
+/*Nesting aplicado*/
 
-    color:black;
-} 
+section{
+    article{
+        h2{
+            color:black;   
+        }
+    }
+}
+
