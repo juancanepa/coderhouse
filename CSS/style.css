@@ -65,7 +65,7 @@ header {
   height: auto;
 }
 
-.contenedor_logo {
+.contenedor_logo, ul.barraNav {
   display: flex;
   justify-content: center;
   align-items: center; /*para alinear el ícono en el centro del contenedor*/
@@ -75,7 +75,6 @@ header {
 ul.barraNav {
   list-style-type: none;
   width: 50%;
-  display: flex;
   justify-content: space-evenly;
   align-items: center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
 }
