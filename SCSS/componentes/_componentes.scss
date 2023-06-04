@@ -3,7 +3,7 @@
 .contenedor_padre{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 4% 92% 4%;
+    grid-template-rows: $size-header $size-main $size-footer;
     grid-template-areas:    "header"
                             "main"
                             "footer";
@@ -48,8 +48,8 @@ section{
 }
 
 .logo{
-    width: 80px;
-    height: 80px;
+    width: $logo-width;
+    height: $logo-height;
 }
 
 header{
@@ -97,8 +97,10 @@ ul.barraNav{
 
 ul.barraNav{
     li{
-        a:hover{
+        a{
+            &:hover{
             background-color: aqua;
+            }
         }
     }
 

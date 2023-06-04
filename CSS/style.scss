@@ -1,5 +1,22 @@
 /*mobile first*/
 
+/*Tipo de fuente*/
+$title_font: sans-serif;
+
+/*Logo*/
+$logo-width: 80px;
+$logo-height: 80px;
+
+/*Color de los titulos*/
+$color-title: aquamarine;
+
+/*Espesor de cada secccion*/
+
+$size-header: 4%;
+$size-main: 92%;
+$sie-footer: 100% - $size-header - $size-main;
+
+
 @import "../SCSS/font/font";
 
 @import "../SCSS/componentes/componentes";
@@ -11,6 +28,7 @@
 @import "../SCSS/MediaQueries/mediaqueries";
 
 @import "../SCSS/galeria/galeria";
+
 
 
 
