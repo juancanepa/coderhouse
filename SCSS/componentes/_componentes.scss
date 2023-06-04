@@ -1,5 +1,7 @@
 /*Aqui estan todas las secciones principales: Header, main, body, footer*/
 
+
+
 .contenedor_padre{
     display: grid;
     grid-template-columns: 100%;
@@ -93,20 +95,28 @@ ul.barraNav{
     }
 }
 
+
+/*Mapa aplicado*/
+$paleta-de-colores: (
+    hover: aquamarine,
+    h1: aquamarine,
+);
+
+
 /*Nesting aplicado*/
 
 ul.barraNav{
     li{
         a{
             &:hover{
-            background-color: aqua;
+                color: map-get($paleta-de-colores,hover);
             }
         }
     }
 
 }
 
-/*Nesting aplicado*/
+/*Nesting aplicado2*/
 ul.barraNav{
     li{
         display:inline-block;

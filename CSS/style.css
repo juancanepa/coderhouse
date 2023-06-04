@@ -2,6 +2,8 @@
 /*mobile first*/
 /*Tipo de fuente*/
 /*Logo*/
+/*Color de los titulos*/
+/*Espesor de cada secccion*/
 * {
   font-family: sans-serif;
   font-weight: 300;
@@ -86,12 +88,13 @@ ul.barraNav li a {
   border-radius: 50%;
 }
 
+/*Mapa aplicado*/
 /*Nesting aplicado*/
 ul.barraNav li a:hover {
-  background-color: aqua;
+  color: aquamarine;
 }
 
-/*Nesting aplicado*/
+/*Nesting aplicado2*/
 ul.barraNav li {
   display: inline-block;
 }
