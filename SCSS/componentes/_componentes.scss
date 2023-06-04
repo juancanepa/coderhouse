@@ -1,0 +1,109 @@
+/*Aqui estan todas las secciones principales: Header, main, body, footer*/
+
+.contenedor_padre{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 4% 92% 4%;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
+}
+
+
+header{
+    grid-area: header;
+    display: flex;
+
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+section article { 
+    background-color:cadetblue;
+    width: 500px;
+    height: 500px;
+}
+
+
+.article{
+    vertical-align: top;
+    display: inline-block;
+    width: 30%; 
+    margin-right: 20px; 
+}
+
+
+.title{
+    text-align: center;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+header{
+    display: flex; /*los elementos hijos de header son flexibles*/
+    justify-content: flex-end;
+    
+}
+
+.about_us img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contenedor_logo{
+    display:flex;
+    justify-content: center;
+    align-items: center; /*para alinear el ícono en el centro del contenedor*/
+    width: 10%;
+}
+ul.barraNav{
+    list-style-type: none;
+    width: 50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
+}
+ul.barraNav li a{
+    text-decoration: none;
+    padding:1rem;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+ul.barraNav li a:hover{
+    
+    background-color: aqua;
+    
+}
+
+ul.barraNav li {
+    display:inline-block;
+}
+
+nav{
+    display:flex;
+    width: 80%;
+    justify-content: flex-end; /*para mandar a los hijos al final*/
+}
+
+.rights{
+    text-align: center;
+}
+
+.ListaObrasSociales li{
+    margin-bottom: 10px;
+}
+
+/**/
+
+

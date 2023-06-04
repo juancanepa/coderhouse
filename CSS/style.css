@@ -1,169 +1,171 @@
+@charset "UTF-8";
 /*mobile first*/
-
-*{
-    font-family: sans-serif;
-    font-weight: 300;
-    box-sizing: border-box;
-    
-} 
-
-/*En general se usan porcentajes en grid (o fracciones)*/
-.contenedor_padre{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 4% 92% 4%;
-    grid-template-areas:    "header"
-                            "main"
-                            "footer";
+* {
+  font-family: sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
 }
 
-
-header{
-    grid-area: header;
-    display: flex;
-
+/*Aqui estan todas las secciones principales: Header, main, body, footer*/
+.contenedor_padre {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 4% 92% 4%;
+  grid-template-areas: "header" "main" "footer";
 }
 
-main{
-    grid-area: main;
+header {
+  grid-area: header;
+  display: flex;
 }
 
-footer{
-    grid-area: footer;
+main {
+  grid-area: main;
 }
 
-
-h1{
-    color: black;
-    background-color: aquamarine;
-    font-size: 50px;
-} 
-
-section article h2 {
-
-    color:black;
-} 
-
-section article { 
-    background-color:cadetblue;
-    width: 500px;
-    height: 500px;
+footer {
+  grid-area: footer;
 }
 
-#id_galeria{
-    background-color: rgb(170, 142, 142);
+section article {
+  background-color: cadetblue;
+  width: 500px;
+  height: 500px;
 }
 
-#id_galeria img{
-    border: 2px solid white;
-    border-radius: 30px;
+.article {
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
+  margin-right: 20px;
 }
 
-ul.barraNav{
-    list-style-type: none;
-    width: 50%;
-    display:flex;
-    justify-content: space-evenly;
-    align-items:center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
-}
-ul.barraNav li a{
-    text-decoration: none;
-    padding:1rem;
-    background-color: aquamarine;
-    border-radius: 50%;
+.title {
+  text-align: center;
 }
 
-ul.barraNav li a:hover{
-    
-    background-color: aqua;
-    
+.logo {
+  width: 80px;
+  height: 80px;
 }
 
-ul.barraNav li {
-    display:inline-block;
-}
-
-
-.article{
-    vertical-align: top;
-    display: inline-block;
-    width: 30%; 
-    margin-right: 20px; 
-}
-
-
-.title{
-    text-align: center;
-}
-  /* Media query for viewport width less than or equal to 500px */
-@media (max-width: 1000px) {
-    .title {
-      /* Add your styles for smaller viewports here */
-      font-size: 24px; /* Adjust the font size as needed */
-      text-align: center; /* Center-align the title */
-    }
-}
-
-  /* Media query for viewport width greater than 500px */
-@media (min-width: 1001px) {
-    .title {
-      /* Add your styles for larger viewports here */
-      font-size: 32px; /* Adjust the font size as needed */
-      text-align: left; /* Reset the text alignment if necessary */
-    }
-}
-
-
-.logo{
-    width: 80px;
-    height: 80px;
-}
-
-header{
-    display: flex; /*los elementos hijos de header son flexibles*/
-    justify-content: flex-end;
-    
+header {
+  display: flex; /*los elementos hijos de header son flexibles*/
+  justify-content: flex-end;
 }
 
 .about_us img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedor_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*para alinear el ícono en el centro del contenedor*/
+  width: 10%;
+}
+
+ul.barraNav {
+  list-style-type: none;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
+}
+
+ul.barraNav li a {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+
+ul.barraNav li a:hover {
+  background-color: aqua;
+}
+
+ul.barraNav li {
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end; /*para mandar a los hijos al final*/
+}
+
+.rights {
+  text-align: center;
+}
+
+.ListaObrasSociales li {
+  margin-bottom: 10px;
+}
+
+/**/
+/*Aqui pongo todos los headings, desde h1 a h4*/
+h1 {
+  color: black;
+  background-color: aquamarine;
+  font-size: 50px;
+}
+
+section article h2 {
+  color: black;
+}
+
+/*Aqui pongo todo sobre la Barra de Navegacion*/
+ul.barraNav {
+  list-style-type: none;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
+}
+
+ul.barraNav li a {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+
+ul.barraNav li a:hover {
+  background-color: aqua;
+}
+
+ul.barraNav li {
+  display: inline-block;
+}
+
+/*Aqui pongo todo sobre las medias queries*/
+/* Media query for viewport width less than or equal to 500px */
+@media (max-width: 1000px) {
+  .title {
+    /* Add your styles for smaller viewports here */
+    font-size: 24px; /* Adjust the font size as needed */
+    text-align: center; /* Center-align the title */
   }
-
-
+}
+/* Media query for viewport width greater than 500px */
+@media (min-width: 1001px) {
+  .title {
+    /* Add your styles for larger viewports here */
+    font-size: 32px; /* Adjust the font size as needed */
+    text-align: left; /* Reset the text alignment if necessary */
+  }
+}
 @media (max-width: 500px) {
-    .about_us {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    
-    .about_us img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-  }
-
-
-
-.contenedor_logo{
-    display:flex;
+  .about_us {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center; /*para alinear el ícono en el centro del contenedor*/
-    width: 20%;
-}
-nav{
-    display:flex;
-    width: 80%;
-    justify-content: flex-end; /*para mandar a los hijos al final*/
-}
-
-.rights{
-    text-align: center;
-}
-
-.ListaObrasSociales li{
+    align-items: flex-start;
+  }
+  .about_us img {
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
-}
+  }
+}/*# sourceMappingURL=style.css.map */

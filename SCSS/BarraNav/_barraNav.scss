@@ -1,0 +1,25 @@
+/*Aqui pongo todo sobre la Barra de Navegacion*/
+ul.barraNav{
+    list-style-type: none;
+    width: 50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center; /*tenemos solo una línea, por eos usamos align items y no align-content*/
+}
+ul.barraNav li a{
+    text-decoration: none;
+    padding:1rem;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+ul.barraNav li a:hover{
+    
+    background-color: aqua;
+    
+}
+
+ul.barraNav li {
+    display:inline-block;
+}
+

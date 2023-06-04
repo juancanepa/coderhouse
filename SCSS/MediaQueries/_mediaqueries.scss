@@ -1,0 +1,33 @@
+/*Aqui pongo todo sobre las medias queries*/
+  /* Media query for viewport width less than or equal to 500px */
+  @media (max-width: 1000px) {
+    .title {
+      /* Add your styles for smaller viewports here */
+      font-size: 24px; /* Adjust the font size as needed */
+      text-align: center; /* Center-align the title */
+    }
+}
+
+  /* Media query for viewport width greater than 500px */
+@media (min-width: 1001px) {
+    .title {
+      /* Add your styles for larger viewports here */
+      font-size: 32px; /* Adjust the font size as needed */
+      text-align: left; /* Reset the text alignment if necessary */
+    }
+}
+
+@media (max-width: 500px) {
+    .about_us {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    
+    .about_us img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
